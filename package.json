@@ -1,0 +1,58 @@
+{
+  "name": "vtex-account",
+  "version": "0.0.1",
+  "description": "Lib Boilerplate",
+  "main": "dist/vtex-account.common.js",
+  "module": "dist/vtex-account.esm.js",
+  "browser": "dist/vtex-account.js",
+  "scripts": {
+    "build": "rollup -c",
+    "clear": "del-cli dist",
+    "compress": "uglifyjs dist/vtex-account.js -o dist/vtex-account.min.js -c -m --comments /^!!/",
+    "lint": "eslint src --fix",
+    "release": "npm run clear && npm run lint && npm run build && npm run compress",
+    "start": "./node_modules/.bin/rollup -c --watch"
+  },
+  "repository": "zeindelf/vtex-account",
+  "homepage": "https://github.com/zeindelf/vtex-account",
+  "license": "MIT",
+  "author": {
+    "name": "Zeindelf",
+    "email": "zeindelf@hotmail.com",
+    "homepage": "https://www.zeindelf.com"
+  },
+  "files": [
+    "dist",
+    "doc",
+    "lib"
+  ],
+  "keywords": [
+    "vtex",
+    "account",
+    "vtex-account",
+    "vtex-account.js",
+    "component",
+    "component.js",
+    "development",
+    "front-end",
+    "javascript",
+    "js",
+    "web"
+  ],
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "del-cli": "^1.1.0",
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-import": "^2.11.0",
+    "npm-run-all": "^4.1.3",
+    "rollup": "^0.58.2",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-watch": "^4.3.1",
+    "uglify-js": "^3.3.23"
+  }
+}

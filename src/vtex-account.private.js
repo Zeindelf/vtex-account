@@ -1,5 +1,5 @@
 
-import CONSTANTS from './vtex-account.constants.js';
+// import CONSTANTS from './vtex-account.constants.js';
 
 class Private {}
 

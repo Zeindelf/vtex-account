@@ -1,6 +1,6 @@
 {
   "name": "vtex-account",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lib Boilerplate",
   "main": "dist/vtex-account.common.js",
   "module": "dist/vtex-account.esm.js",

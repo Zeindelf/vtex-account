@@ -12,7 +12,7 @@ class VtexAccount {
          * Version
          * @type {String}
          */
-        this.version = '0.0.1';
+        this.version = '0.0.2';
 
         /**
          * Package name
